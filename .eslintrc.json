@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-console": "warn", // Warns on console.log statements
+    "react/react-in-jsx-scope": "off", // No need to import React in Next.js
+    "semi": ["error", "always"], // Requires semicolons
+    "quotes": ["error", "double"], // Enforces double quotes
+    "indent": ["error", 2] // Enforces 2-space indentation
+  }
 }
